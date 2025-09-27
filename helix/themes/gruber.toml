@@ -1,0 +1,98 @@
+# ~/.config/helix/themes/gruber_dark_transparent.toml
+# Gruber Dark theme with transparent background
+# author: Adapted by Grok, inspired by Gruber Dark and nyxvamp-radiance
+
+inherits = "gruber-darker"
+
+# Override specific styles for Gruber Dark with transparent background
+"function" = { fg = "function_fg", modifiers = ["bold"] }
+"function.builtin" = { fg = "function_builtin_fg", modifiers = ["bold"] }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg", modifiers = ["bold"] }
+"comment" = { fg = "comment_fg", modifiers = [] }  # No italics for comments
+
+# UI overrides: Only ui.background is transparent
+"ui.background" = { fg = "foreground" }  # No background color, uses terminal's transparent background
+"ui.statusline" = { fg = "status_fg", bg = "status_bg" }  # Opaque statusline
+"ui.statusline.inactive" = { fg = "status_inactive_fg", bg = "status_inactive_bg" }  # Opaque inactive statusline
+"ui.statusline.normal" = { fg = "#ffffff", bg = "#3a5fcd" }  # Gruber Dark blue for Normal mode
+"ui.statusline.insert" = { fg = "#ffffff", bg = "#cc7832" }  # Gruber Dark orange for Insert mode
+"ui.statusline.select" = { fg = "#ffffff", bg = "#95a99e" }  # Gruber Dark green for Select mode
+"ui.menu" = { fg = "menu_fg", bg = "menu_bg" }  # Opaque menu
+"ui.popup" = { fg = "popup_fg", bg = "popup_bg" }  # Opaque popup
+"ui.window" = { fg = "foreground", bg = "background" }  # Opaque window
+"ui.help" = { fg = "line_nr", bg = "background" }  # Opaque help menu
+"ui.cursor" = { fg = "cursor_fg", bg = "cursor_bg" }  # Visible cursor
+"ui.cursor.primary" = { fg = "cursor_fg", bg = "cursor_bg", modifiers = ["reversed"] }  # Visible primary cursor
+
+# Palette overrides
+[palette]
+# Transparent background
+foreground = "#e4e4ef"  # Gruber Dark off-white text
+cursor_fg = "#ffffff"   # White cursor text
+cursor_bg = "#ffdd33"   # Gruber Dark mustard yellow cursor
+cursorline = "#1c2526"  # Slightly lighter than typical Gruber Dark background
+selection = "#2a3b4d"   # Gruber Dark muted blue selection
+line_nr = "#96a6c8"     # Gruber Dark muted blue-gray line numbers
+line_nr_selected = "#e4e4ef"  # Off-white for selected line number
+
+# Status line colors
+status_fg = "#e4e4ef"   # Off-white text on status
+status_bg = "#2a3b4d"   # Gruber Dark muted blue background (opaque)
+status_inactive_fg = "#96a6c8"  # Muted blue-gray for inactive status
+status_inactive_bg = "#1c2526"  # Darker background (opaque)
+
+# Menu colors (opaque for readability)
+menu_fg = "#e4e4ef"     # Off-white text
+menu_bg = "#2a3b4d"     # Gruber Dark muted blue background
+menu_sel_fg = "#ffffff" # White text for selected menu item
+menu_sel_bg = "#3a5fcd" # Gruber Dark blue for selected menu background
+menu_scroll_fg = "#96a6c8"  # Muted blue-gray for scroll
+menu_scroll_bg = "#2a3b4d"  # Muted blue background
+popup_fg = "#e4e4ef"    # Off-white popup text
+popup_bg = "#2a3b4d"    # Muted blue background
+
+# UI virtual
+virtual_ruler_bg = "#2a3b4d"  # Opaque ruler
+
+# Syntax highlighting
+match_paren_fg = "#ffffff"  # White for matching parentheses
+match_paren_bg = "#2a3b4d"  # Muted blue background
+comment_fg = "#96a6c8"      # Muted blue-gray comments
+string_fg = "#cc7832"       # Gruber Dark orange for strings
+string_special_fg = "#cc7832"  # Orange for special strings
+constant_fg = "#95a99e"     # Gruber Dark green for constants
+constant_builtin_fg = "#95a99e"  # Green for built-in constants
+number_fg = "#95a99e"       # Green for numbers
+boolean_fg = "#95a99e"      # Green for booleans
+function_fg = "#3a5fcd"     # Gruber Dark blue for functions
+function_builtin_fg = "#3a5fcd"  # Blue for built-in functions
+keyword_fg = "#cc7832"      # Orange for keywords
+keyword_control_fg = "#cc7832"  # Orange for control keywords
+operator_fg = "#e4e4ef"     # Off-white for operators
+variable_fg = "#e4e4ef"     # Off-white for variables
+variable_builtin_fg = "#e4e4ef"  # Off-white for built-in variables
+type_fg = "#e4e4ef"         # Off-white for types
+type_builtin_fg = "#e4e4ef"  # Off-white for built-in types
+attribute_fg = "#e4e4ef"    # Off-white for attributes
+namespace_fg = "#e4e4ef"    # Off-white for namespaces
+punctuation_fg = "#e4e4ef"  # Off-white for punctuation
+symbol_fg = "#cc7832"       # Orange for symbols
+
+# Diagnostics
+error_fg = "#bc3f3c"    # Gruber Dark red for errors
+warning_fg = "#cc7832"  # Orange for warnings
+info_fg = "#3a5fcd"     # Blue for info
+hint_fg = "#95a99e"     # Green for hints
+
+# Diff colors
+diff_add_fg = "#95a99e"     # Green for additions
+diff_delete_fg = "#bc3f3c"  # Red for deletions
+diff_change_fg = "#cc7832"  # Orange for changes
+
+# Markup colors
+markup_heading_fg = "#3a5fcd"  # Blue for headings
+markup_bold_fg = "#e4e4ef"    # Off-white for bold text
+markup_italic_fg = "#e4e4ef"  # Off-white for italic text
+markup_link_url_fg = "#3a5fcd"  # Blue for URLs
+markup_link_text_fg = "#e4e4ef"  # Off-white for link text
+markup_quote_fg = "#2a3b4d"   # Muted blue for quotes

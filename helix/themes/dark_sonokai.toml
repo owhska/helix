@@ -1,0 +1,65 @@
+# Dark Sonokai Theme (adaptado com fundo cinza mais escuro)
+# author: Grok
+
+inherits = "nyxvamp-radiance"
+
+# Override specific styles
+"function" = { fg = "function_fg" }
+"function.builtin" = { fg = "function_builtin_fg" }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg" }
+"comment" = { fg = "comment_fg" }
+
+# Palette adaptada para Dark Sonokai com fundo cinza mais escuro
+[palette]
+# Fundo/Texto
+background = "#0F1419"      # Cinza muito escuro (inspirado no Sonokai andromeda)
+foreground = "#D3C6AA"      # Bege claro (base Sonokai para texto geral)
+cursor_fg = "#0F1419"       # Cinza escuro para texto do cursor
+cursor_bg = "#FFCC66"       # Amarelo-alaranjado (Sonokai-style para cursor)
+cursorline = "#1C252C"      # Cinza escuro médio para linha de cursor
+selection = "#2E3B47"       # Cinza-azulado escuro para seleção
+line_nr = "#5C6A77"         # Cinza médio para números de linha
+line_nr_selected = "#D3C6AA" # Bege claro para número de linha selecionado
+status_fg = "#D3C6AA"       # Bege claro para texto da barra de status
+status_bg = "#1C252C"       # Cinza escuro para fundo da barra de status
+status_inactive_fg = "#5C6A77" # Cinza médio para status inativo
+status_inactive_bg = "#0F1419" # Cinza muito escuro para fundo de status inativo
+menu_fg = "#D3C6AA"         # Bege claro para texto do menu
+menu_bg = "#0F1419"         # Cinza muito escuro para fundo do menu
+menu_sel_fg = "#FFCC66"     # Amarelo-alaranjado para texto de menu selecionado
+menu_sel_bg = "#2E3B47"     # Cinza-azulado escuro para fundo de menu selecionado
+menu_scroll_fg = "#5C6A77"  # Cinza médio para scroll
+menu_scroll_bg = "#0F1419"  # Cinza muito escuro para fundo de scroll
+popup_fg = "#D3C6AA"        # Bege claro para texto de popup
+popup_bg = "#0F1419"        # Cinza muito escuro para fundo de popup
+virtual_ruler_bg = "#0F1419" # Cinza muito escuro para régua virtual
+match_paren_fg = "#FFCC66"  # Amarelo-alaranjado para parênteses correspondentes
+match_paren_bg = "#2E3B47"  # Cinza-azulado escuro para fundo de parênteses
+comment_fg = "#5C6A77"      # Cinza médio para comentários
+string_fg = "#E6B673"       # Laranja suave (Sonokai-style para strings)
+string_special_fg = "#E6B673" # Laranja suave para strings especiais
+constant_fg = "#A3BE8C"     # Verde suave (Sonokai-style para constantes)
+number_fg = "#A3BE8C"       # Verde suave para números
+boolean_fg = "#A3BE8C"      # Verde suave para booleanos
+function_fg = "#E6B673"     # Laranja suave para funções
+keyword_fg = "#BF616A"      # Vermelho suave para palavras-chave
+operator_fg = "#5C6A77"     # Cinza médio para operadores
+variable_fg = "#D3C6AA"     # Bege claro para variáveis
+type_fg = "#8FBCBB"         # Ciano suave para tipos
+attribute_fg = "#D3C6AA"    # Bege claro para atributos
+namespace_fg = "#D3C6AA"    # Bege claro para namespaces
+punctuation_fg = "#5C6A77"  # Cinza médio para pontuação
+symbol_fg = "#E6B673"       # Laranja suave para símbolos
+error_fg = "#BF616A"        # Vermelho suave para erros
+warning_fg = "#EBCB8B"      # Amarelo suave para avisos
+info_fg = "#E6B673"         # Laranja suave para informações
+hint_fg = "#5C6A77"         # Cinza médio para dicas
+diff_add_fg = "#A3BE8C"     # Verde suave para adições
+diff_delete_fg = "#BF616A"  # Vermelho suave para deleções
+diff_change_fg = "#EBCB8B"  # Amarelo suave para mudanças
+markup_heading_fg = "#5C6A77" # Cinza médio para títulos
+markup_bold_fg = "#D3C6AA"  # Bege claro para texto em negrito
+markup_italic_fg = "#D3C6AA" # Bege claro para texto em itálico
+markup_link_url_fg = "#E6B673" # Laranja suave para URLs
+markup_link_text_fg = "#D3C6AA" # Bege claro para texto de links
+markup_quote_fg = "#2E3B47"  # Cinza-azulado escuro para citações

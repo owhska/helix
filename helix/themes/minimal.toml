@@ -1,0 +1,84 @@
+# Minimalist Dark Theme (adapted from nichabosh.minimalist-dark)
+# author: Grok (adapted from nyxvamp by zoedsoupe <zoey.spessanha@zeetech.io>)
+
+inherits = "nyxvamp-radiance"
+
+# Override specific styles for Minimalist Dark theme
+"function" = { fg = "function_fg" }
+"function.builtin" = { fg = "function_builtin_fg" }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg" }
+"comment" = { fg = "comment_fg" }  # No bold or italic for minimal look
+
+# Palette overrides to match Minimalist Dark aesthetic
+[palette]
+# Dark background with light gray foreground
+background = "#1a1a1a"  # Very dark gray background (matches editor)
+foreground = "#d4d4d4"  # Light gray text (matches general text)
+cursor_fg = "#000000"   # Black cursor text
+cursor_bg = "#ffffff"   # White cursor
+cursorline = "#2a2a2a"  # Slightly lighter dark gray
+selection = "#3a3a3a"   # Dark gray selection (matches UI elements)
+line_nr = "#6a6a6a"     # Muted gray for line numbers
+line_nr_selected = "#d4d4d4"  # Light gray for selected line number
+
+# Status line colors
+status_fg = "#d4d4d4"   # Light gray text
+status_bg = "#2a2a2a"   # Slightly lighter dark gray (matches sidebar)
+status_inactive_fg = "#6a6a6a"  # Muted gray for inactive status
+status_inactive_bg = "#1a1a1a"  # Same as background
+
+# Menu colors
+menu_fg = "#d4d4d4"     # Light gray text
+menu_bg = "#1a1a1a"     # Dark background
+menu_sel_fg = "#000000" # Black text for selected menu item
+menu_sel_bg = "#5a5a5a" # Medium gray for selected menu background
+menu_scroll_fg = "#6a6a6a"  # Muted gray for scroll
+menu_scroll_bg = "#1a1a1a"  # Dark background
+popup_fg = "#d4d4d4"    # Light gray popup text
+popup_bg = "#1a1a1a"    # Dark background
+
+# UI virtual
+virtual_ruler_bg = "#1a1a1a"  # Same as background
+
+# Syntax highlighting (based on Minimalist Dark screenshot)
+match_paren_fg = "#ffffff"  # White for matching parentheses
+match_paren_bg = "#3a3a3a"  # Dark gray background
+comment_fg = "#6a6a6a"      # Muted gray for comments (matches screenshot)
+string_fg = "#8ab4f8"       # Subtle blue for strings (inferred from variable-like text)
+string_special_fg = "#8ab4f8"  # Subtle blue for special strings
+constant_fg = "#9ed072"     # Subtle green for constants (inferred from types)
+constant_builtin_fg = "#9ed072"  # Subtle green for built-in constants
+number_fg = "#9ed072"       # Subtle green for numbers
+boolean_fg = "#9ed072"      # Subtle green for booleans
+function_fg = "#c6a0f6"     # Subtle purple for functions (inferred from `function` keyword)
+function_builtin_fg = "#c6a0f6"  # Subtle purple for built-in functions
+keyword_fg = "#c6a0f6"      # Subtle purple for keywords
+keyword_control_fg = "#c6a0f6"  # Subtle purple for control keywords
+operator_fg = "#d4d4d4"     # Light gray for operators
+variable_fg = "#8ab4f8"     # Subtle blue for variables (inferred from variable names)
+variable_builtin_fg = "#8ab4f8"  # Subtle blue for built-in variables
+type_fg = "#9ed072"         # Subtle green for types (inferred from `T`)
+type_builtin_fg = "#9ed072"  # Subtle green for built-in types
+attribute_fg = "#d4d4d4"    # Light gray for attributes
+namespace_fg = "#d4d4d4"    # Light gray for namespaces
+punctuation_fg = "#d4d4d4"  # Light gray for punctuation
+symbol_fg = "#8ab4f8"       # Subtle blue for symbols
+
+# Diagnostics
+error_fg = "#ff6b6b"    # Soft red for errors
+warning_fg = "#f4a261"  # Soft orange for warnings
+info_fg = "#8ab4f8"     # Subtle blue for info
+hint_fg = "#6a6a6a"     # Muted gray for hints
+
+# Diff colors
+diff_add_fg = "#9ed072"     # Subtle green for additions
+diff_delete_fg = "#ff6b6b"  # Soft red for deletions
+diff_change_fg = "#f4a261"  # Soft orange for changes
+
+# Markup colors
+markup_heading_fg = "#c6a0f6"  # Subtle purple for headings
+markup_bold_fg = "#d4d4d4"    # Light gray for bold text
+markup_italic_fg = "#d4d4d4"  # Light gray for italic text
+markup_link_url_fg = "#8ab4f8"  # Subtle blue for URLs
+markup_link_text_fg = "#d4d4d4"  # Light gray for link text
+markup_quote_fg = "#3a3a3a"   # Dark gray for quotes

@@ -1,0 +1,82 @@
+# Minimalist Dark Theme (adaptado com paleta do yugen)
+# author: Grok
+
+inherits = "nyxvamp-radiance"
+
+# Override specific styles
+"function" = { fg = "function_fg" }
+"function.builtin" = { fg = "function_builtin_fg" }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg" }
+"comment" = { fg = "comment_fg" }
+
+# Palette adaptada
+[palette]
+# Fundo/Texto
+background = "#151515"      # Very dark gray (color700) for background
+foreground = "#D4D4D4"      # Light gray (color200) for general text
+cursor_fg = "#151515"       # Dark gray (color700) for cursor text
+cursor_bg = "#FFFF00"       # Yellow (placeholder) for cursor background
+cursorline = "#303030"      # Dark gray (color600) for cursor line
+selection = "#303030"       # Dark gray (color600) for selection
+line_nr = "#505050"         # Muted gray (color500) for line numbers
+line_nr_selected = "#D4D4D4" # Light gray (color200) for selected line number
+status_fg = "#D4D4D4"       # Light gray (color200) for status line text
+status_bg = "#303030"       # Dark gray (color600) for status line background
+status_inactive_fg = "#505050" # Muted gray (color500) for inactive status
+status_inactive_bg = "#151515" # Very dark gray (color700) for inactive status background
+menu_fg = "#D4D4D4"         # Light gray (color200) for menu text
+menu_bg = "#151515"         # Very dark gray (color700) for menu background
+menu_sel_fg = "#FAFAFA"     # Bright white (color100) for selected menu text
+menu_sel_bg = "#696969"     # Darker gray (color400) for selected menu background
+menu_scroll_fg = "#505050"  # Muted gray (color500) for scroll
+menu_scroll_bg = "#151515"  # Very dark gray (color700) for scroll background
+popup_fg = "#D4D4D4"        # Light gray (color200) for popup text
+popup_bg = "#151515"        # Very dark gray (color700) for popup background
+virtual_ruler_bg = "#151515" # Very dark gray (color700) for virtual ruler
+match_paren_fg = "#FAFAFA"  # Bright white (color100) for matching parentheses
+match_paren_bg = "#303030"  # Dark gray (color600) for matching parentheses background
+comment_fg = "#505050"      # Muted gray (color500) for comments
+string_fg = "#FFBE89"       # Soft orange (primary) for strings
+string_special_fg = "#FFBE89" # Soft orange (primary) for special strings
+constant_fg = "#7EAB8E"     # Subtle green (success) for constants
+number_fg = "#7EAB8E"       # Subtle green (success) for numbers
+boolean_fg = "#7EAB8E"      # Subtle green (success) for booleans
+function_fg = "#FFBE89"     # Soft orange (primary) for functions
+keyword_fg = "#696969"      # Darker gray (color400) for keywords
+operator_fg = "#696969"     # Darker gray (color400) for operators
+variable_fg = "#D4D4D4"     # Light gray (color200) for variables
+type_fg = "#A9A9A9"         # Medium gray (color300) for types
+attribute_fg = "#D4D4D4"    # Light gray (color200) for attributes
+namespace_fg = "#D4D4D4"    # Light gray (color200) for namespaces
+punctuation_fg = "#696969"  # Darker gray (color400) for punctuation
+symbol_fg = "#FFBE89"       # Soft orange (primary) for symbols
+error_fg = "#F57A7A"        # Soft red (error) for errors
+warning_fg = "#FFF2AF"      # Gentle yellow (warning) for warnings
+info_fg = "#FFBE89"         # Soft orange (primary) for info
+hint_fg = "#505050"         # Muted gray (color500) for hints
+diff_add_fg = "#7EAB8E"     # Subtle green (success) for additions
+diff_delete_fg = "#F57A7A"  # Soft red (error) for deletions
+diff_change_fg = "#FFF2AF"  # Gentle yellow (warning) for changes
+markup_heading_fg = "#696969" # Darker gray (color400) for headings
+markup_bold_fg = "#D4D4D4"  # Light gray (color200) for bold text
+markup_italic_fg = "#D4D4D4" # Light gray (color200) for italic text
+markup_link_url_fg = "#FFBE89" # Soft orange (primary) for URLs
+markup_link_text_fg = "#D4D4D4" # Light gray (color200) for link text
+markup_quote_fg = "#303030"  # Dark gray (color600) for quotes
+
+
+
+# Status line
+
+# Menu
+
+# UI virtual
+
+# Sintaxe
+
+# Diagnósticos
+
+# Diff
+
+# Markup
+

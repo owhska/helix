@@ -1,0 +1,84 @@
+# Monokai Pro Ristretto at Night Theme (adapted from Minimalist Dark)
+# author: Grok (adapted from nyxvamp by zoedsoupe <zoey.spessanha@zeetech.io>)
+
+inherits = "nyxvamp-radiance"
+
+# Override specific styles for Monokai Pro Ristretto at Night theme
+"function" = { fg = "function_fg" }
+"function.builtin" = { fg = "function_builtin_fg" }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg" }
+"comment" = { fg = "comment_fg" }  # No bold or italic for minimal look
+
+# Palette overrides to match Monokai Pro Ristretto at Night aesthetic
+[palette]
+# Darker, cooler background with soft foreground for a nighttime feel
+background = "#1c150b"  # Deep, cool black-brown (darker Ristretto night tone)
+foreground = "#e8e3f0"  # Soft lavender-white for text (cooler off-white)
+cursor_fg = "#1c150b"   # Dark cursor text (matches background)
+cursor_bg = "#ff9664"   # Slightly muted orange for cursor (night-adjusted)
+cursorline = "#261d14"  # Darker warm brown for cursor line
+selection = "#352a22"   # Cool dark brown-gray for selection
+line_nr = "#5b4d40"     # Muted cool brown for line numbers
+line_nr_selected = "#e8e3f0"  # Lavender-white for selected line number
+
+# Status line colors
+status_fg = "#e8e3f0"   # Lavender-white text
+status_bg = "#261d14"   # Darker warm brown (matches cursorline)
+status_inactive_fg = "#5b4d40"  # Muted cool brown for inactive status
+status_inactive_bg = "#1c150b"  # Same as background
+
+# Menu colors
+menu_fg = "#e8e3f0"     # Lavender-white text
+menu_bg = "#1c150b"     # Dark background
+menu_sel_fg = "#1c150b" # Dark text for selected menu item
+menu_sel_bg = "#58493d" # Cool medium brown for selected menu background
+menu_scroll_fg = "#5b4d40"  # Muted cool brown for scroll
+menu_scroll_bg = "#1c150b"  # Dark background
+popup_fg = "#e8e3f0"    # Lavender-white popup text
+popup_bg = "#1c150b"    # Dark background
+
+# UI virtual
+virtual_ruler_bg = "#1c150b"  # Same as background
+
+# Syntax highlighting (inspired by Monokai Pro Ristretto, night-adjusted)
+match_paren_fg = "#e8e3f0"  # Lavender-white for matching parentheses
+match_paren_bg = "#352a22"  # Cool dark brown-gray background
+comment_fg = "#5b4d40"      # Muted cool brown for comments (subdued for night)
+string_fg = "#f4c069"       # Warm yellow-orange for strings (slightly muted)
+string_special_fg = "#f4c069"  # Warm yellow-orange for special strings
+constant_fg = "#a0d174"     # Vibrant green (slightly cooler for night)
+constant_builtin_fg = "#a0d174"  # Vibrant green for built-in constants
+number_fg = "#a0d174"       # Vibrant green for numbers
+boolean_fg = "#a0d174"      # Vibrant green for booleans
+function_fg = "#ff9664"     # Slightly muted orange for functions
+function_builtin_fg = "#ff9664"  # Slightly muted orange for built-in functions
+keyword_fg = "#a792e6"      # Cooler purple for keywords (night-adjusted)
+keyword_control_fg = "#a792e6"  # Cooler purple for control keywords
+operator_fg = "#e8e3f0"     # Lavender-white for operators
+variable_fg = "#6dc9d7"     # Cooler cyan for variables (night-adjusted)
+variable_builtin_fg = "#6dc9d7"  # Cooler cyan for built-in variables
+type_fg = "#a0d174"         # Vibrant green for types
+type_builtin_fg = "#a0d174"  # Vibrant green for built-in types
+attribute_fg = "#e8e3f0"    # Lavender-white for attributes
+namespace_fg = "#e8e3f0"    # Lavender-white for namespaces
+punctuation_fg = "#e8e3f0"  # Lavender-white for punctuation
+symbol_fg = "#6dc9d7"       # Cooler cyan for symbols
+
+# Diagnostics
+error_fg = "#f76c89"    # Bright pink-red (slightly cooler for night)
+warning_fg = "#f4c069"  # Warm yellow-orange for warnings
+info_fg = "#6dc9d7"     # Cooler cyan for info
+hint_fg = "#5b4d40"     # Muted cool brown for hints
+
+# Diff colors
+diff_add_fg = "#a0d174"     # Vibrant green for additions
+diff_delete_fg = "#f76c89"  # Bright pink-red for deletions
+diff_change_fg = "#f4c069"  # Warm yellow-orange for changes
+
+# Markup colors
+markup_heading_fg = "#a792e6"  # Cooler purple for headings
+markup_bold_fg = "#e8e3f0"    # Lavender-white for bold text
+markup_italic_fg = "#e8e3f0"  # Lavender-white for italic text
+markup_link_url_fg = "#6dc9d7"  # Cooler cyan for URLs
+markup_link_text_fg = "#e8e3f0"  # Lavender-white for link text
+markup_quote_fg = "#352a22"   # Cool dark brown-gray for quotes

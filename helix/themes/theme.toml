@@ -1,0 +1,79 @@
+
+# Override specific styles for light yellow variant
+"function" = { fg = "function_fg", modifiers = ["bold"] }
+"function.builtin" = { fg = "function_builtin_fg", modifiers = ["bold"] }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg", modifiers = ["bold"] }
+
+# Palette overrides
+[palette]
+# Light yellow theme colors
+background = "#FFF9E0"  # Light yellow background
+foreground = "#000000"  # Black text
+cursor_fg = "#000000"
+cursor_bg = "#00FF00"  # Green cursor
+cursorline = "#FFF0C0"  # Slightly darker yellow for cursor line
+selection = "#E0E0D0"  # Light gray selection
+line_nr = "#404040"  # Dark gray line numbers
+line_nr_selected = "#000000"  # Black for selected line number
+
+# Status line colors
+status_fg = "#000000"
+status_bg = "#FFF9E0"
+status_inactive_fg = "#404040"
+status_inactive_bg = "#FFF9E0"
+
+# Menu colors
+menu_fg = "#000000"
+menu_bg = "#FFF9E0"
+menu_sel_fg = "#FFF9E0"
+menu_sel_bg = "#00FF00"
+menu_scroll_fg = "#404040"
+menu_scroll_bg = "#FFF9E0"
+popup_fg = "#000000"
+popup_bg = "#FFF9E0"
+
+# UI virtual
+virtual_ruler_bg = "#FFF0C0"  # Slightly darker than background
+
+# Syntax highlighting
+match_paren_fg = "#00FF00"  # Green for matching parentheses
+match_paren_bg = "#FFF9E0"
+comment_fg = "#606060"  # Dark gray comments
+string_fg = "#008000"  # Dark green strings
+string_special_fg = "#00FF00"  # Green special strings
+constant_fg = "#00FF00"  # Green constants
+constant_builtin_fg = "#00FF00"
+number_fg = "#006400"  # Dark green numbers
+boolean_fg = "#00FF00"
+function_fg = "#000080"  # Dark blue functions
+function_builtin_fg = "#000080"
+keyword_fg = "#800080"  # Purple keywords
+keyword_control_fg = "#800080"
+operator_fg = "#000000"  # Black operators
+variable_fg = "#000000"
+variable_builtin_fg = "#00FF00"
+type_fg = "#4B0082"  # Indigo types
+type_builtin_fg = "#4B0082"
+attribute_fg = "#800080"
+namespace_fg = "#6A5ACD"  # Slate blue namespaces
+punctuation_fg = "#000000"
+symbol_fg = "#00FF00"
+
+# Diagnostics
+error_fg = "#FF0000"  # Red errors
+warning_fg = "#FFA500"  # Orange warnings
+info_fg = "#0000FF"  # Blue info
+hint_fg = "#00CED1"  # Dark turquoise hints
+
+# Diff colors
+diff_add_fg = "#008000"  # Dark green additions
+diff_delete_fg = "#FF0000"  # Red deletions
+diff_change_fg = "#FFA500"  # Orange changes
+
+# Markup colors
+markup_heading_fg = "#800080"
+markup_bold_fg = "#800080"
+markup_italic_fg = "#800080"
+markup_link_url_fg = "#000080"
+markup_link_text_fg = "#800080"
+markup_quote_fg = "#606060"

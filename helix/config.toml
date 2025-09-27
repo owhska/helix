@@ -1,0 +1,21 @@
+#theme = "yyy"
+#theme = "gruber-darker"
+#theme = "solar"
+#theme = "tango"
+theme = "rose"
+
+#[keys.normal]
+#f1 = ":open ~/projetos/arquivo1.rs"
+#f2 = ":open ~/projetos/arquivo2.rs"
+#f3 = ":open ~/projetos/arquivo3.rs"
+
+[editor]
+auto-completion = true
+color-modes = true
+completion-timeout = 100 # Tempo em milissegundos para mostrar sugestões
+#gutters = ["spacer"]
+
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"

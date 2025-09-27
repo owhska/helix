@@ -1,0 +1,61 @@
+[[language]]
+name = "python"
+language-servers = ["python-lsp-server"]
+
+[language-server.pyright]
+command = "python-lsp-server"
+args = ["--stdio"]
+
+[[language]]
+name = "javascript"
+scope = "source.js"
+file-types = ["js", "jsx"]
+roots = ["package.json"]
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+
+[[language]]
+name = "python"
+scope = "source.python"
+injection-regex = "python"
+file-types = ["py", "pyi"]
+roots = ["pyproject.toml", "setup.py"]
+auto-format = true
+comment-token = "#"
+language-servers = ["pylsp"]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.pylsp]
+command = "pylsp"
+
+[[language]]
+name = "elixir"
+scope = "source.elixir"
+file-types = ["ex", "exs"]
+roots = ["mix.exs"]
+language-servers = ["elixir-ls"]
+
+[[language]]
+name = "html"
+scope = "text.html"
+file-types = ["html"]
+roots = ["package.json"]
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[[language]]
+name = "css"
+scope = "source.css"
+file-types = ["css", "scss"]
+roots = ["package.json"]
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[language-server.elixir-ls]
+command = "C:/Users/mathe/bin/elixir-ls.bat"
+args = []

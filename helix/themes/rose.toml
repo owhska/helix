@@ -1,0 +1,84 @@
+ # nyxvamp - rose pine dark variant
+# author: zoedsoupe <zoey.spessanha@zeetech.io>
+
+inherits = "nyxvamp-radiance"
+
+# Override specific styles for Rose Pine Dark match
+"function" = { fg = "function_fg", modifiers = ["bold"] }
+"function.builtin" = { fg = "function_builtin_fg", modifiers = ["bold"] }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg", modifiers = ["bold"] }
+"comment" = { fg = "comment_fg", modifiers = [] }  # Ensure comments are not italicized
+
+# Palette overrides
+[palette]
+# Dark background and light foreground
+background = "#000000"  # Black background
+foreground = "#e0def4"  # Light grayish-purple text (Rose Pine text)
+cursor_fg = "#000000"   # Black cursor text
+cursor_bg = "#ffffff"   # White cursor
+cursorline = "#1a1a1a"  # Slightly lighter than background for cursor line
+selection = "#262626"   # Dark gray selection
+line_nr = "#908caa"     # Muted purple-gray line numbers (Rose Pine subtle)
+line_nr_selected = "#e0def4"  # Light grayish-purple for selected line number
+
+# Status line colors
+status_fg = "#e0def4"   # Light grayish-purple text on status
+status_bg = "#262626"   # Dark gray background
+status_inactive_fg = "#908caa"  # Muted purple-gray for inactive status
+status_inactive_bg = "#000000"  # Same as background
+
+# Menu colors
+menu_fg = "#e0def4"     # Light grayish-purple text
+menu_bg = "#000000"     # Black background
+menu_sel_fg = "#000000" # Black text for selected menu item
+menu_sel_bg = "#c4a7e7" # Purple for selected menu background (Rose Pine iris)
+menu_scroll_fg = "#908caa"  # Muted purple-gray for scroll
+menu_scroll_bg = "#000000"  # Black background
+popup_fg = "#e0def4"    # Light grayish-purple popup text
+popup_bg = "#000000"    # Black background
+
+# UI virtual
+virtual_ruler_bg = "#000000"  # Same as background
+
+# Syntax highlighting
+match_paren_fg = "#ffffff"  # White for matching parentheses
+match_paren_bg = "#262626"  # Dark gray background
+comment_fg = "#908caa"      # Muted purple-gray comments (Rose Pine subtle)
+string_fg = "#f6c177"       # Yellow for strings (Rose Pine gold)
+string_special_fg = "#f6c177"  # Yellow for special strings
+constant_fg = "#31748f"     # Cyan-blue constants (Rose Pine pine)
+constant_builtin_fg = "#31748f"  # Cyan-blue built-in constants
+number_fg = "#31748f"       # Cyan-blue numbers
+boolean_fg = "#31748f"      # Cyan-blue booleans
+function_fg = "#9ccfd8"     # Light blue functions (Rose Pine foam)
+function_builtin_fg = "#9ccfd8"  # Light blue built-in functions
+keyword_fg = "#eb6f92"      # Pink keywords (Rose Pine love)
+keyword_control_fg = "#eb6f92"  # Pink control keywords
+operator_fg = "#c4a7e7"     # Purple operators (Rose Pine iris)
+variable_fg = "#ebbcba"     # Light pink variables (Rose Pine rose)
+variable_builtin_fg = "#ebbcba"  # Light pink built-in variables
+type_fg = "#e0def4"         # Light grayish-purple types
+type_builtin_fg = "#e0def4"  # Light grayish-purple built-in types
+attribute_fg = "#e0def4"    # Light grayish-purple attributes
+namespace_fg = "#e0def4"    # Light grayish-purple namespaces
+punctuation_fg = "#e0def4"  # Light grayish-purple punctuation
+symbol_fg = "#f6c177"       # Yellow symbols (Rose Pine gold)
+
+# Diagnostics
+error_fg = "#eb6f92"    # Pink errors (Rose Pine love)
+warning_fg = "#f6c177"  # Yellow warnings (Rose Pine gold)
+info_fg = "#9ccfd8"     # Light blue info (Rose Pine foam)
+hint_fg = "#31748f"     # Cyan-blue hints (Rose Pine pine)
+
+# Diff colors
+diff_add_fg = "#31748f"     # Cyan-blue additions (Rose Pine pine)
+diff_delete_fg = "#eb6f92"  # Pink deletions (Rose Pine love)
+diff_change_fg = "#f6c177"  # Yellow changes (Rose Pine gold)
+
+# Markup colors
+markup_heading_fg = "#c4a7e7"  # Purple headings (Rose Pine iris)
+markup_bold_fg = "#e0def4"    # Light grayish-purple bold text
+markup_italic_fg = "#e0def4"  # Light grayish-purple italic text
+markup_link_url_fg = "#9ccfd8"  # Light blue URLs (Rose Pine foam)
+markup_link_text_fg = "#ebbcba"  # Light pink link text (Rose Pine rose)
+markup_quote_fg = "#262626"   # Dark gray quotes

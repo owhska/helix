@@ -1,0 +1,84 @@
+# nyxvamp - tango dark variant
+# author: zoedsoupe <zoey.spessanha@zeetech.io>
+
+inherits = "nyxvamp-radiance"
+
+# Override specific styles for Tango Dark match
+"function" = { fg = "function_fg", modifiers = ["bold"] }
+"function.builtin" = { fg = "function_builtin_fg", modifiers = ["bold"] }
+"ui.match_paren" = { fg = "match_paren_fg", bg = "match_paren_bg", modifiers = ["bold"] }
+"comment" = { fg = "comment_fg", modifiers = [] }  # Ensure comments are not italicized
+
+# Palette overrides
+[palette]
+# Dark background and light foreground
+background = "#2e3436"  # Dark grayish-black background
+foreground = "#d3d7cf"  # Light gray/off-white text
+cursor_fg = "#2e3436"   # Dark background for cursor text
+cursor_bg = "#ffffff"   # White cursor
+cursorline = "#3c4446"  # Slightly lighter than background for cursor line
+selection = "#555753"   # Medium gray selection
+line_nr = "#888a85"    # Light gray line numbers
+line_nr_selected = "#d3d7cf"  # Light gray for selected line number
+
+# Status line colors
+status_fg = "#d3d7cf"   # Light gray text on status
+status_bg = "#555753"   # Medium gray background
+status_inactive_fg = "#888a85"  # Muted gray for inactive status
+status_inactive_bg = "#2e3436"  # Same as background
+
+# Menu colors
+menu_fg = "#d3d7cf"     # Light gray text
+menu_bg = "#2e3436"     # Dark background
+menu_sel_fg = "#2e3436" # Dark text for selected menu item
+menu_sel_bg = "#729fcf" # Blue for selected menu background
+menu_scroll_fg = "#888a85"  # Muted gray for scroll
+menu_scroll_bg = "#2e3436"  # Dark background
+popup_fg = "#d3d7cf"    # Light gray popup text
+popup_bg = "#2e3436"    # Dark background
+
+# UI virtual
+virtual_ruler_bg = "#2e3436"  # Same as background
+
+# Syntax highlighting
+match_paren_fg = "#ffffff"  # White for matching parentheses
+match_paren_bg = "#555753"  # Medium gray background
+comment_fg = "#4e9a06"      # Dark green comments
+string_fg = "#fce94f"       # Light green for strings
+string_special_fg = "#fce94f"  # Light green for special strings
+constant_fg = "#ad7fa8"     # Purple constants
+constant_builtin_fg = "#ad7fa8"  # Purple built-in constants
+number_fg = "#ad7fa8"       # Purple numbers
+boolean_fg = "#ad7fa8"      # Purple booleans
+function_fg = "#8cc4ff"     # Light blue functions
+function_builtin_fg = "#8cc4ff"  # Light blue built-in functions
+keyword_fg = "#729fcf"      # Blue keywords
+keyword_control_fg = "#729fcf"  # Blue control keywords
+operator_fg = "#d3d7cf"     # Light gray operators
+variable_fg = "#d3d7cf"     # Light gray variables
+variable_builtin_fg = "#d3d7cf"  # Light gray built-in variables
+type_fg = "#d3d7cf"         # Light gray types
+type_builtin_fg = "#d3d7cf"  # Light gray built-in types
+attribute_fg = "#d3d7cf"    # Light gray attributes
+namespace_fg = "#d3d7cf"    # Light gray namespaces
+punctuation_fg = "#d3d7cf"  # Light gray punctuation
+symbol_fg = "#fce94f"       # Light green symbols (e.g., NOR)
+
+# Diagnostics
+error_fg = "#a40000"    # Red errors
+warning_fg = "#c4a000"  # Yellow warnings
+info_fg = "#729fcf"    # Blue info
+hint_fg = "#4e9a06"     # Green hints
+
+# Diff colors
+diff_add_fg = "#4e9a06"     # Green additions
+diff_delete_fg = "#a40000"  # Red deletions
+diff_change_fg = "#c4a000"  # Yellow changes
+
+# Markup colors
+markup_heading_fg = "#729fcf"  # Blue headings
+markup_bold_fg = "#d3d7cf"    # Light gray bold text
+markup_italic_fg = "#d3d7cf"  # Light gray italic text
+markup_link_url_fg = "#729fcf"  # Blue URLs
+markup_link_text_fg = "#d3d7cf"  # Light gray link text
+markup_quote_fg = "#555753"   # Gray quotes
